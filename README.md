@@ -115,7 +115,44 @@ extension MyViewController: RouterProtocol {
 
  <br /> <br />
  
-**5. Understanding Guards and tracking previous deep-link URL**
+ ## Passing Deep-Link Parameters to Controller
+ 
+ By default MasseRouterManager automatically handles the logistics behind passing route parameters through to your view
+ controller for you to have full access of. Let's take a quick look at how to setup a parameter in the route definition and then
+ how to access that parameter from the controller `canActivate:link:params` method via the `RouterProtocol`.
+ 
+ ### Defining Param Routes
+ 
+ ```swift
+ // Push deep-linked view onto a navigation stack
+ let pushRouterLogic = RouterLogic(selectTab: false, pushTabIndex: 1, presentation: .push)
+ 
+ let routeProfile = Route(link: "/profile/:id", routerLink: RouterLink(identifier: "ProfileSummaryViewController", storyboard: "Profile"), routerLogic: pushRouterLogic)
+ ```
+ 
+ This example above we setup a route for deep-linking to profiles and all we have to do is annotate a parameter by prefacing it with a colon,
+ so this route has one single parameter of name "id" now.
+ 
+ ### Accessing Route Params
+ 
+ ```swift
+ extension ProfileSummaryViewController: RouterProtocol {
+    func canActivate(link: String, params: [String : Any]) -> Bool {
+        if let profileID = params["id"] as? String {
+            self.profileId = Int(profileID)
+            return true
+        }
+ 
+        return false
+    }
+ }
+ ```
+ 
+ The RouterManager automatically grabs the parameters from the deep-link and provides them as a dictionary object to your
+ controller. For safety, try utilizing the parameters through an ```if let``` to be certain the value actually exists before using
+ it.
+ 
+ ## Understanding Guards and Tracking Previous Deep-Link URL
 
 The ability to add controller based logic to determine whether a deep link can show helps in a couple of ways. First, being able
 to keep code very confined within its context rather than lumping all the logic into a completion block in your AppDelegate.
