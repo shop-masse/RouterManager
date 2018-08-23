@@ -37,12 +37,16 @@ Easily add routing and deep linking functionality to your application in a matte
 
 <img src="https://image.ibb.co/iNFwdK/Screen_Shot_2018_08_22_at_11_46_48_PM.png" width="410" />
 
+ <br /> <br />
+ 
 **2. Import RouterManager into your AppDelegate**
 
 ```swift
 import RouterManager
 ```
 
+ <br /> <br />
+ 
 **3. Setup supported routes in the AppDelegate file**
 
 In order to keep your code clean and easily maintainable we highly encourage breaking this out into its
@@ -85,6 +89,8 @@ func setupRoutes() {
     `routerLink` - RouterLink object <br />
     `routerLogic` - RouterLogic object <br />
 
+ <br /> <br />
+ 
 **4. Implement RouterProtocol in View Controllers**
 
 Each view controller that has a route mapped to it must expressly inherit the `RouterProtocol` ideally from an extension of their 
@@ -107,6 +113,8 @@ extension NotificationListViewController: RouterProtocol {
 }
 ```
 
+ <br /> <br />
+ 
 **5. Understanding Guards and tracking previous deep-link URL**
 
 The ability to add controller based logic to determine whether a deep link can show helps in a couple of ways. First, being able
