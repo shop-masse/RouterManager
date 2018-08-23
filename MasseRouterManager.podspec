@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'RouterManager'
+  s.name             = 'MasseRouterManager'
   s.version          = '1.0'
-  s.summary          = 'RouterManager is a quick to implement library that handles in-app routing from sources such as deep links.'
+  s.summary          = 'MasseRouterManager is a quick to implement library that handles in-app routing from sources such as deep links.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = 'RouterManager is a quick to implement library that handles in-app routing from sources such as deep links. Quickly add supported routes, and inherit protocol method to get routing.'
+  s.description      = 'MasseRouterManager is a quick to implement library that handles in-app routing from sources such as deep links. Quickly add supported routes, and inherit protocol method to get routing.'
 
   s.homepage         = 'https://github.com/shop-masse/RouterManager'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
