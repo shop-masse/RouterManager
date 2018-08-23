@@ -100,7 +100,7 @@ shows a use case if your application wanted to return `true` or `false` based on
 be displayed via the deep-link.
 
 ```swift
-extension NotificationListViewController: RouterProtocol {
+extension MyViewController: RouterProtocol {
     func canActivate(link: String, params: [String : Any]) -> Bool {
         if (userIsLoggedIn) {
             // Deep-link will occur
