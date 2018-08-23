@@ -139,7 +139,7 @@ extension MyViewController: RouterProtocol {
  extension ProfileSummaryViewController: RouterProtocol {
     func canActivate(link: String, params: [String : Any]) -> Bool {
         if let profileID = params["id"] as? String {
-            self.profileId = Int(profileID)
+            self.profileID = Int(profileID)
             return true
         }
  
@@ -151,6 +151,8 @@ extension MyViewController: RouterProtocol {
  The RouterManager automatically grabs the parameters from the deep-link and provides them as a dictionary object to your
  controller. For safety, try utilizing the parameters through an ```if let``` to be certain the value actually exists before using
  it.
+ 
+ <br /> <br />
  
  ## Understanding Guards and Tracking Previous Deep-Link URL
 
