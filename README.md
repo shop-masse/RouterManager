@@ -1,9 +1,14 @@
-# MasseRouterManager
+<p align="center"><img src="https://image.ibb.co/hQrjHe/Masse_Router_Manager.png" width="500"/>
 
+</p>
+
+
+<p align="center">
 [![CI Status](https://img.shields.io/travis/Brayden/RouterManager.svg?style=flat)](https://travis-ci.org/Brayden/RouterManager)
 [![Version](https://img.shields.io/cocoapods/v/RouterManager.svg?style=flat)](https://cocoapods.org/pods/RouterManager)
 [![License](https://img.shields.io/cocoapods/l/RouterManager.svg?style=flat)](https://cocoapods.org/pods/RouterManager)
 [![Platform](https://img.shields.io/cocoapods/p/RouterManager.svg?style=flat)](https://cocoapods.org/pods/RouterManager)
+</p>
 
 ## Overview
 
@@ -131,7 +136,7 @@ extension MyViewController: RouterProtocol {
  
  ```swift
  // Push deep-linked view onto a navigation stack
- let pushRouterLogic = RouterLogic(selectTab: false, pushTabIndex: 1, presentation: .push)
+ let pushRouterLogic = RouterLogic(selectTab: true, pushTabIndex: 4, presentation: .push)
  
  let routeProfile = Route(link: "/profile/:id", routerLink: RouterLink(identifier: "ProfileSummaryViewController", storyboard: "Profile"), routerLogic: pushRouterLogic)
  ```
