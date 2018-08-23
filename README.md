@@ -14,6 +14,8 @@ current state of the application, or if additional custom logic is required. Thi
 for applications who need to create `guards`  to allow some view controllers to be locked based on a variety of options such
 as the users logged in state, their access rights, etc.
 
+<br /> <br />
+
 ## Requirements
 
 Currently this library only supports Swift applications that utilize Storyboards. In the near future we will be adding additional
