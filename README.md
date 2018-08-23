@@ -4,11 +4,18 @@
 
 
 <p align="center">
+<a href="https://travis-ci.org/button/DeepLinkKit"><img src="http://img.shields.io/travis/button/DeepLinkKit.svg?style=flat" alt="CI Status" /></a>
+<a href='https://coveralls.io/github/button/DeepLinkKit?branch=master'><img src='https://coveralls.io/repos/github/button/DeepLinkKit/badge.svg?branch=master' alt='Coverage Status' /></a>
+<a href="http://cocoadocs.org/docsets/DeepLinkKit"><img src="https://img.shields.io/cocoapods/v/DeepLinkKit.svg?style=flat" alt="Version" /></a>
+<a href="http://cocoadocs.org/docsets/DeepLinkKit"><img src="https://img.shields.io/cocoapods/l/DeepLinkKit.svg?style=flat" alt="License" /></a>
+<a href="http://cocoadocs.org/docsets/DeepLinkKit"><img src="https://img.shields.io/cocoapods/p/DeepLinkKit.svg?style=flat" alt="Platform" /></a>
+</p>
+
+
 [![CI Status](https://img.shields.io/travis/Brayden/RouterManager.svg?style=flat)](https://travis-ci.org/Brayden/RouterManager)
 [![Version](https://img.shields.io/cocoapods/v/RouterManager.svg?style=flat)](https://cocoapods.org/pods/RouterManager)
 [![License](https://img.shields.io/cocoapods/l/RouterManager.svg?style=flat)](https://cocoapods.org/pods/RouterManager)
 [![Platform](https://img.shields.io/cocoapods/p/RouterManager.svg?style=flat)](https://cocoapods.org/pods/RouterManager)
-</p>
 
 ## Overview
 
