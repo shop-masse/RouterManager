@@ -67,22 +67,23 @@ func setupRoutes() {
 }
 ```
 
-<em>RouterLogic
-    `selectTab` - Corresponding deep link will select a tab from the tab bar controller before performing its actions
-    `pushTabIndex` - Indicates which tab from the tab bar controller will be selected
-    `presentation` - Has three options of presentation, "stay", "push", and "modal"
-</em>
+<strong>RouterLogic</strong> <br />
+    `selectTab` - Corresponding deep link will select a tab from the tab bar controller before performing its actions <br />
+    `pushTabIndex` - Indicates which tab from the tab bar controller will be selected <br />
+    `presentation` - Has three options of presentation, "stay", "push", and "modal" <br />
 
-<em>RouterLink
-    `identifier` - Identifier of the view controller as found in Storyboard
-    `storyboard` - Name of storyboard file in the main application Bundle
-</em>
+ <br />
+ 
+<strong>RouterLink</strong> <br />
+    `identifier` - Identifier of the view controller as found in Storyboard <br />
+    `storyboard` - Name of storyboard file in the main application Bundle <br />
 
-<em>Route
-    `link` - Deep-link URL match to execute this logic
-    `routerLink` - RouterLink object
-    `routerLogic` - RouterLogic object
-</em>
+ <br />
+ 
+<strong>Route</strong> <br />
+    `link` - Deep-link URL match to execute this logic <br />
+    `routerLink` - RouterLink object <br />
+    `routerLogic` - RouterLogic object <br />
 
 **4. Implement RouterProtocol in View Controllers**
 
