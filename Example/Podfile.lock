@@ -1,0 +1,16 @@
+PODS:
+  - RouterManager (0.1.0)
+
+DEPENDENCIES:
+  - RouterManager (from `../`)
+
+EXTERNAL SOURCES:
+  RouterManager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RouterManager: 599322f25af869bd407ac89160ec45736f0f1ba9
+
+PODFILE CHECKSUM: 1e4a0cc90ded333ddd69e8cce0aadc84d5c70e0a
+
+COCOAPODS: 1.5.3
