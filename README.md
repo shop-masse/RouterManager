@@ -19,6 +19,8 @@ as the users logged in state, their access rights, etc.
 Currently this library only supports Swift applications that utilize Storyboards. In the near future we will be adding additional
 functionality that allows you to route to controllers that are programatically defined and scoped.
 
+<br /> <br />
+
 ## Installation
 
 ### CocoaPods
@@ -29,6 +31,8 @@ it, simply add the following line to your Podfile:
 pod 'MasseRouterManager'
 ```
 
+<br /> <br />
+
 ## Usage
 
 Easily add routing and deep linking functionality to your application in a matter of minutes.
@@ -37,7 +41,7 @@ Easily add routing and deep linking functionality to your application in a matte
 
 <img src="https://image.ibb.co/iNFwdK/Screen_Shot_2018_08_22_at_11_46_48_PM.png" width="410" />
 
- <br /> <br />
+ <br />
  
 **2. Import RouterManager into your AppDelegate**
 
@@ -45,7 +49,7 @@ Easily add routing and deep linking functionality to your application in a matte
 import RouterManager
 ```
 
- <br /> <br />
+ <br />
  
 **3. Setup supported routes in the AppDelegate file**
 
@@ -89,7 +93,7 @@ func setupRoutes() {
     `routerLink` - RouterLink object <br />
     `routerLogic` - RouterLogic object <br />
 
- <br /> <br />
+ <br />
  
 **4. Implement RouterProtocol in View Controllers**
 
@@ -181,10 +185,13 @@ if let previousDeeplink = RouterManager.shared.previousDeeplink {
 This snippet simply executes the stored previous deep link after a small delay (enough to let a page transition happen) and then sets
 the `previousDeeplink` property to nil to acknowledge the deeplink has been successfully completed and handled.
 
+<br /> <br />
 
 ## Author
 
 Brayden Wilmoth - brayden.wilmoth@shopmasse.com
+
+<br /> <br />
 
 ## License
 
