@@ -34,6 +34,7 @@ pod 'MasseRouterManager'
 Easily add routing and deep linking functionality to your application in a matter of minutes.
 
 **1. Register a URL Scheme in your Info.plist file**
+
 <img src="https://image.ibb.co/iNFwdK/Screen_Shot_2018_08_22_at_11_46_48_PM.png" width="410" />
 
 **2. Import RouterManager into your AppDelegate**
